@@ -1,9 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a2afebc-b616-4577-9325-7414b50aa34d" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="2a2afebc-b616-4577-9325-7414b50aa34d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/stefandotti/mattermost/actions/SendToMattermostAction.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/stefandotti/mattermost/api/MattermostClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/stefandotti/mattermost/api/Models.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/stefandotti/mattermost/services/MattermostNotifier.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/stefandotti/mattermost/services/MattermostService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/stefandotti/mattermost/settings/MattermostConfigurable.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/stefandotti/mattermost/settings/MattermostSettings.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/stefandotti/mattermost/toolwindow/MattermostToolWindowFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/github/stefandotti/mattermost/toolwindow/MattermostToolWindowPanel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/stefandotti/mattermost/icons/mattermost.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/mattermost.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/pluginIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intellij-mattermost-plugin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/intellij-mattermost-plugin.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/Java-WebSocket-1.3.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/emoji4j-5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/fluent-hc-4.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/hamcrest-all-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/httpclient-4.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/httpclient-cache-4.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/httpclient-win-4.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/httpcore-4.4.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/httpmime-4.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jackson-annotations-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jackson-core-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jackson-databind-2.7.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jna-4.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jna-platform-4.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/lambdaj-2.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij-mattermost-plugin/META-INF/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij-mattermost-plugin/icons/offline.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/offline.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij-mattermost-plugin/icons/online.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/online.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij-mattermost-plugin/icons/team.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/icons/team.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/intellij-mattermost-plugin/keystore.jks" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/keystore.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/icons/offline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/icons/online.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/icons/team.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/keystore.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/MMUserStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/MMUserStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/MattermostClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/MattermostClientFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/MattermostClientWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/MattermostClientWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/Channel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/ChannelMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/ChannelMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/Channels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/Channels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/Posted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/Posted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/PostedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/PostedData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/PostedDataWithString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/PostedDataWithString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/PostedWithString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/PostedWithString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/TeamMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/TeamMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/Typing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/Typing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/settings/SettingsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/settings/SettingsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/settings/SettingsForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/settings/SettingsForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/intellij/plugins/team/mattermost/settings/SettingsForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/intellij/plugins/team/mattermost/settings/SettingsForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/mattermost/MattermostClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/mattermost/MattermostClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/dotti/mattermost/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/at/dotti/mattermost/Type.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,15 +95,76 @@
     <expand />
     <select />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation>
+            <after_sync>
+              <task name="setupDependencies" />
+            </after_sync>
+          </activation>
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="intellij-mattermost-plugin" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="intellij-mattermost-plugin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="intellij-mattermost-plugin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="intellij" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
     <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jglanz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/stefandotti/intellij-mattermost-plugin&quot;,
+    &quot;accountId&quot;: &quot;2de244ce-a87d-4e1d-b48a-ef5551ae759d&quot;
+  }
+}</component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.14-bin/38aieal9i53h9rfe7vjup95b9/gradle-8.14" javaHome="$USER_HOME$/Applications/Android Studio.app/Contents/jbr/Contents/Home" gradleVersion="8.14">
+    <option name="jvmArguments">
+      <list>
+        <option value="-Dandroid.home=/opt/android_sdk" />
+        <option value="-Didea.compose.hot-reload=true" />
+        <option value="-Didea.compose.hot-reload.version=2" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -37,18 +173,24 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="npaRsp3J" />
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand />
       <select />
     </treeState>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2560" />
     <option name="width" value="3840" />
     <option name="height" value="2110" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="34fBy0bn8cufjktfjJagJQqLm1g" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -71,27 +213,73 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build intellij-mattermost-plugin.executor": "Run",
+    "Gradle.intellij-mattermost-plugin [buildPlugin].executor": "Run",
+    "Gradle.intellij-mattermost-plugin [buildSearchableOptions].executor": "Run",
+    "Gradle.intellij-mattermost-plugin [runIde].executor": "Run",
+    "Gradle.intellij-mattermost-plugin [setupDependencies].executor": "Run",
+    "JUnit.Whole project (1).executor": "Run",
+    "JUnit.Whole project.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cidr.known.project.marker": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jglanz/code/platforms/idea/intellij-mattermost-plugin/src/main/resources/icons",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/icons" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/icons" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <option value="$PROJECT_DIR$/src/main" />
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.intellij-mattermost-plugin [runIde]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -100,82 +288,140 @@
       <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="intellij-mattermost-plugin [buildPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildPlugin" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="intellij-mattermost-plugin [buildSearchableOptions]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildSearchableOptions" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="intellij-mattermost-plugin [runIde]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runIde" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Whole project (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.intellij-mattermost-plugin [runIde]" />
+        <item itemvalue="Gradle.intellij-mattermost-plugin [buildPlugin]" />
+        <item itemvalue="Gradle.intellij-mattermost-plugin [buildSearchableOptions]" />
+        <item itemvalue="JUnit.Whole project (1)" />
+        <item itemvalue="JUnit.Whole project" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -188,6 +434,11 @@
       <workItem from="1511871177112" duration="127000" />
       <workItem from="1511871328342" duration="255000" />
       <workItem from="1511871597058" duration="6000" />
+      <workItem from="1761595001175" duration="1712000" />
+      <workItem from="1761622444963" duration="694000" />
+      <workItem from="1761629459838" duration="675000" />
+      <workItem from="1761706939871" duration="1554000" />
+      <workItem from="1761789642894" duration="2393000" />
     </task>
     <servers />
   </component>
@@ -228,14 +479,25 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/intellij-mattermost-plugin.iml">
