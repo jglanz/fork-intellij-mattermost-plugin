@@ -1,55 +1,83 @@
+@file:Suppress("ImplicitThis")
+
 plugins {
     kotlin("jvm") version "2.2.0"
-    id("org.jetbrains.intellij") version "1.17.3"
+    id("org.jetbrains.intellij.platform") version "2.10.3"
+    id("org.jetbrains.intellij.platform.migration") version "2.10.3"
 }
 
 group = "com.github.stefandotti"
-version = "1.2.0"
+//version = "1.2.0"
 
 repositories {
     mavenCentral()
+    intellijPlatform {
+        defaultRepositories()
+    }
+}
+
+dependencies {
+    intellijPlatform {
+        create("IC", "2025.2")
+    }
 }
 
 val gsonVersion = "2.11.0"
 
-intellij {
-    version.set("2025.2")
-    type.set("IC")
-    plugins.set(listOf("com.intellij.java"))
+intellijPlatform {
+
+    pluginConfiguration {
+        name = "Mattermost"
+        description = "Mattermost integration for IntelliJ IDEA"
+//
+//        sinceBuild.set("252")
+    }
 }
 
-
 tasks {
-    patchPluginXml {
-        sinceBuild.set("252")
-//        untilBuild.set(null)
+
+//    runIde {
+//        autoReloadPlugins.set(true)
+//    }
+    withType<Copy> {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
 
-    runIde {
-        autoReloadPlugins.set(true)
+    // Specifically, configure the jar task
+    withType<Jar> {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
-  withType<Copy> {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-  }
-  
-  // Specifically, configure the jar task
-  withType<Jar> {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-  }
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs("src/main/java")
+            resources.srcDirs("src/main/resources")
+        }
+        test {
+            java.srcDirs("src/test/java")
+            resources.srcDirs("src/test/resources")
+        }
+    }
 }
 
 kotlin {
     // jvmToolchain(21)
-  sourceSets {
-    main {
-      kotlin.srcDirs("src/main/kotlin")
-      resources.srcDirs("src/main/resources")
+    sourceSets {
+        main {
+            kotlin.srcDirs("src/main/kotlin")
+//      resources.srcDirs("src/main/resources")
+        }
+        test {
+            kotlin.srcDirs("src/test/kotlin")
+//      resources.srcDirs("src/test/resources")
+        }
     }
-    test {
-      kotlin.srcDirs("src/test/kotlin")
-      resources.srcDirs("src/test/resources")
-    }
-  }
 }
 
 dependencies {
@@ -78,7 +106,7 @@ dependencies {
     implementation("org.java-websocket:Java-WebSocket:1.3.6")
 
     // Emoji
-    implementation("com.vdurmont:emoji-java:5.1.1")
+    implementation("com.kcthota:emoji4j:5.0")
     // Note: Original libs/ had emoji4j-5.0.jar; the maintained Maven artifact is emoji-java.
     // If you strictly need emoji4j 5.0, replace the above with: implementation("com.github.aayushatharva:emoji4j:5.0")
 

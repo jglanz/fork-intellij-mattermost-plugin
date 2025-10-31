@@ -43,10 +43,11 @@ import java.util.List;
 import java.util.Timer;
 
 public class MattermostClientWindow {
+		private static final ClassLoader clazzLoader = MattermostClientWindow.class.getClassLoader();
 
-    public static final Icon TEAM = IconLoader.getIcon("/icons/team.png");
+    public static final Icon TEAM = IconLoader.getIcon("/icons/team.png", clazzLoader);
 
-    public static final Icon ONLINE = IconLoader.getIcon("/icons/online.png");
+    public static final Icon ONLINE = IconLoader.getIcon("/icons/online.png", clazzLoader);
 
     public static final Icon OFFLINE = IconLoader.getIcon("/icons/offline.png");
 
@@ -118,7 +119,7 @@ public class MattermostClientWindow {
 
         contactsPanel.setContent(main);
 
-        Content contacts = ContentFactory.SERVICE.getInstance().createContent(contactsPanel, "Contacts", false);
+        Content contacts = ContentFactory.getInstance().createContent(contactsPanel, "Contacts", false);
         contacts.setCloseable(false);
         contacts.setToolwindowTitle("Contacts");
         contacts.setIcon(TEAM);
@@ -181,7 +182,7 @@ public class MattermostClientWindow {
             Chat chat = this.channelIdChatMap.computeIfAbsent(channel.getId(), k -> new Chat());
             chat.channelId = channel.getId();
             if (this.toolWindow.getContentManager().getContent(chat) == null) {
-                Content messages = ContentFactory.SERVICE.getInstance().createContent(chat, name, false);
+                Content messages = ContentFactory.getInstance().createContent(chat, name, false);
                 messages.setIcon(TEAM);
                 this.toolWindow.getContentManager().addContent(messages);
                 this.toolWindow.getContentManager().setSelectedContent(messages);
@@ -215,7 +216,7 @@ public class MattermostClientWindow {
             }
             Chat chat = this.channelIdChatMap.computeIfAbsent(post.getPost().getChannelId(), k -> new Chat());
             if (this.toolWindow.getContentManager().getContent(chat) == null) {
-                Content messages = ContentFactory.SERVICE.getInstance().createContent(chat, name, false);
+                Content messages = ContentFactory.getInstance().createContent(chat, name, false);
                 messages.setIcon(TEAM);
                 this.toolWindow.getContentManager().addContent(messages);
                 this.toolWindow.getContentManager().setSelectedContent(messages);

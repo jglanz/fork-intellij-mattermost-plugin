@@ -1,0 +1,59 @@
+[versions]
+kotlin = "2.2.0"
+intellijPlatform = "2.0.1"
+idea = "2025.2"
+# Libraries
+gson = "2.11.0"
+apache-httpclient = "4.5.3"
+apache-httpcore = "4.4.6"
+jackson = "2.7.4"
+commons-io = "2.5"
+commons-codec = "1.9"
+commons-logging = "1.2"
+java-websocket = "1.3.6"
+emoji4j = "5.0"
+jna = "4.1.0"
+lambdaj = "2.3.3"
+hamcrest = "1.3"
+
+[libraries]
+# Google
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+# Apache HttpComponents
+httpclient = { module = "org.apache.httpcomponents:httpclient", version.ref = "apache-httpclient" }
+httpmime = { module = "org.apache.httpcomponents:httpmime", version.ref = "apache-httpclient" }
+httpclient-cache = { module = "org.apache.httpcomponents:httpclient-cache", version.ref = "apache-httpclient" }
+httpclient-win = { module = "org.apache.httpcomponents:httpclient-win", version.ref = "apache-httpclient" }
+httpcore = { module = "org.apache.httpcomponents:httpcore", version.ref = "apache-httpcore" }
+fluent-hc = { module = "org.apache.httpcomponents:fluent-hc", version.ref = "apache-httpclient" }
+
+# Jackson
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+
+# Commons
+commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
+commons-codec = { module = "commons-codec:commons-codec", version.ref = "commons-codec" }
+commons-logging = { module = "commons-logging:commons-logging", version.ref = "commons-logging" }
+
+# WebSocket
+java-websocket = { module = "org.java-websocket:Java-WebSocket", version.ref = "java-websocket" }
+
+# Emoji
+emoji4j = { module = "com.kcthota:emoji4j", version.ref = "emoji4j" }
+
+# JNA
+jna = { module = "net.java.dev.jna:jna", version.ref = "jna" }
+jna-platform = { module = "net.java.dev.jna:jna-platform", version.ref = "jna" }
+
+# Lambdaj
+lambdaj = { module = "com.googlecode.lambdaj:lambdaj", version.ref = "lambdaj" }
+
+# Test libs
+hamcrest = { module = "org.hamcrest:hamcrest-all", version.ref = "hamcrest" }
+
+[plugins]
+intellij-platform = { id = "org.jetbrains.intellij.platform", version.ref = "intellijPlatform" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

@@ -17,6 +17,6 @@ out/
 .DS_Store
 *.iml
 
-
+.idea
 !lib/*.jar
 !libs/*.jar

@@ -22,6 +22,15 @@
         </action>
     </actions>
 
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Define a notification group -->
+        <notificationGroup
+                id="mattermost" displayType="BALLOON" isLogByDefault="true"
+        />
+        <notificationGroup
+                id="team" displayType="BALLOON" isLogByDefault="true"
+        />
+    </extensions>
 <!--    <notifications>-->
 <!--        <group id="Mattermost" displayType="BALLOON" isLogByDefault="true"/>-->
 <!--    </notifications>-->
