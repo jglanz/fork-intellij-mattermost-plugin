@@ -18,7 +18,7 @@
 
     <actions>
         <action id="com.github.stefandotti.mattermost.SendToMattermost" class="com.github.stefandotti.mattermost.actions.SendToMattermostAction" text="Send to Mattermost" description="Send selected text to Mattermost">
-            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="Copy"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="last" />
         </action>
     </actions>
 

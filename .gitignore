@@ -20,3 +20,4 @@ out/
 .idea
 !lib/*.jar
 !libs/*.jar
+/.intellijPlatform/
