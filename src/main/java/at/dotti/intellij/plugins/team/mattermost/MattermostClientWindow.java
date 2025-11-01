@@ -207,9 +207,9 @@ public class MattermostClientWindow {
                 String leftUserID = post.getChannelName().substring(0, post.getChannelName().indexOf("__"));
                 String rightUserID = post.getChannelName().substring(post.getChannelName().indexOf("__") + 2);
                 if (!leftUserID.equals(client.getUser().getId())) {
-                    name = (String) client.getUsers().get(leftUserID).get("username");
+                    name = (String) client.getUsers().get(leftUserID).get("username").getAsString();
                 } else {
-                    name = (String) client.getUsers().get(rightUserID).get("username");
+                    name = (String) client.getUsers().get(rightUserID).get("username").getAsString();
                 }
             } else {
                 name = post.getChannelDisplayName();
@@ -225,6 +225,7 @@ public class MattermostClientWindow {
         });
     }
 
+    @SuppressWarnings("removal")
     private class Chat extends JPanel {
 
         private final JTextPane area;
