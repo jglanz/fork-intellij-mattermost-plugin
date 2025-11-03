@@ -16,6 +16,7 @@ import com.intellij.notification.Notification
 import com.intellij.notification.NotificationType
 import com.intellij.notification.Notifications
 import com.intellij.ui.SortedListModel
+import net.bis5.mattermost.client4.MattermostClient
 
 import org.apache.commons.io.IOUtils
 import org.apache.commons.lang.StringEscapeUtils
@@ -49,8 +50,8 @@ import javax.net.ssl.TrustManagerFactory
 import javax.swing.ListModel
 import javax.swing.SwingUtilities
 
-class MattermostClient {
-    private var MM_URL: String? = null
+class MattermostClientManager {
+    private var mmServerUrlBase: String? = null
 
     private val client: CloseableHttpClient
 
@@ -73,7 +74,19 @@ class MattermostClient {
     private var teams: Array<TeamMember?> = arrayOf()
 
     private val gson: Gson = GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).create()
-
+    
+    private var mmClientInternal: MattermostClient? = null
+    
+    val mmClient:MattermostClient
+      get() {
+        if (mmClientInternal == null) {
+          mmClientInternal = MattermostClient(mmServerUrlBase!!).apply {
+            setAccessToken(token!!)
+          }
+        }
+        
+        return mmClientInternal!!
+      }
     @Throws(IOException::class, URISyntaxException::class)
     fun login(username: String, password: String) {
         val req = HttpPost(url(USERS_LOGIN_URL))
@@ -99,21 +112,21 @@ class MattermostClient {
 
     @Throws(URISyntaxException::class)
     private fun url(apiUrl: String?): URI {
-        if (!MM_URL!!.endsWith("/")) {
-            MM_URL += "/"
+        if (!mmServerUrlBase!!.endsWith("/")) {
+            mmServerUrlBase += "/"
         }
-        return URI(MM_URL + apiUrl)
+        return URI(mmServerUrlBase + apiUrl)
     }
 
     @Throws(URISyntaxException::class)
     private fun wss(apiUrl: String?): URI {
-        if (!MM_URL!!.endsWith("/")) {
-            MM_URL += "/"
+        if (!mmServerUrlBase!!.endsWith("/")) {
+            mmServerUrlBase += "/"
         }
-        val wsUrl = if (MM_URL!!.startsWith("https"))
-            MM_URL!!.replace("https", "wss")
+        val wsUrl = if (mmServerUrlBase!!.startsWith("https"))
+            mmServerUrlBase!!.replace("https", "wss")
         else
-            MM_URL!!.replace("http", "ws")
+            mmServerUrlBase!!.replace("http", "ws")
         return URI(wsUrl + apiUrl)
     }
 
@@ -281,7 +294,7 @@ class MattermostClient {
         KeyManagementException::class
     )
     fun run(listModel: SortedListModel<MMUserStatus?>, username: String, password: String, url: String) {
-        MM_URL = url
+        mmServerUrlBase = url
         login(username, password)
         users()
         teams()
@@ -397,7 +410,7 @@ class MattermostClient {
                             when (status) {
                                 "OK" -> if (map.containsKey("data")) {
                                     userStatus()
-                                    fillListModel(this@MattermostClient.status)
+                                    fillListModel(this@MattermostClientManager.status)
                                 }
 
                                 "FAIL" -> SwingUtilities.invokeLater(Runnable {
@@ -501,7 +514,7 @@ class MattermostClient {
             }
         }
 
-        if (MM_URL!!.startsWith("https")) {
+        if (mmServerUrlBase!!.startsWith("https")) {
             val factory = createSslSocketFactory()
             ws.setSocket(factory.createSocket())
         }
@@ -530,7 +543,7 @@ class MattermostClient {
         val KEYPASSWORD = "keypassword"
 
         val ks = KeyStore.getInstance(STORETYPE)
-        ks.load(MattermostClient::class.java.getResourceAsStream(KEYSTORE), STOREPASSWORD.toCharArray())
+        ks.load(MattermostClientManager::class.java.getResourceAsStream(KEYSTORE), STOREPASSWORD.toCharArray())
 
         val kmf = KeyManagerFactory.getInstance("SunX509")
         kmf.init(ks, KEYPASSWORD.toCharArray())
@@ -630,7 +643,7 @@ class MattermostClient {
         return createChannel(s)
     }
 
-    companion object {
+    companion object Companion {
         @Deprecated("use v4 instead")
         private const val API = "api/v4"
 

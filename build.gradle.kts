@@ -92,6 +92,8 @@ dependencies {
     implementation("org.apache.httpcomponents:httpclient-win:4.5.3")
     implementation("org.apache.httpcomponents:httpcore:4.4.6")
     implementation("org.apache.httpcomponents:fluent-hc:4.5.3")
+  
+  implementation("net.bis5.mattermost4j:mattermost4j-jersey:1.0.0-beta.1")
 
     // Jackson (matching versions from libs/)
     implementation("com.fasterxml.jackson.core:jackson-annotations:2.7.4")

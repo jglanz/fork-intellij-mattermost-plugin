@@ -4,7 +4,7 @@ import at.dotti.intellij.plugins.team.mattermost.model.Channel;
 import at.dotti.intellij.plugins.team.mattermost.model.PostedData;
 import at.dotti.intellij.plugins.team.mattermost.model.Users;
 import at.dotti.intellij.plugins.team.mattermost.settings.SettingsBean;
-import at.dotti.mattermost.MattermostClient;
+import at.dotti.mattermost.MattermostClientManager;
 import at.dotti.mattermost.Type;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
@@ -65,7 +65,7 @@ public class MattermostClientWindow {
 
     private JBLabel status;
 
-    private MattermostClient client;
+    private MattermostClientManager client;
 
     public MattermostClientWindow(Project project, ToolWindow toolWindow) {
         this.project = project;
@@ -128,7 +128,7 @@ public class MattermostClientWindow {
         toolWindow.getContentManager().addContent(contacts);
         toolWindow.getContentManager().setSelectedContent(contacts);
 
-        this.client = new MattermostClient();
+        this.client = new MattermostClientManager();
         client.setStatusCallback(s -> this.status.setText(s));
         client.setBalloonCallback(s -> {
             SwingUtilities.invokeLater(() -> {
